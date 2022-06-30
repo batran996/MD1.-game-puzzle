@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<img height="50px" width="150px" src="image/cho1.jpg" id="dog1" onclick="cham1()"> <br>
+<img height="50px" width="150px" src="image/ho2.jpg" id="ho2" onclick="cham2()"><br>
+<img height="50px" width="150px" src="image/meo3.jpg" id="meo3" onclick="cham3()">
+
+<script>
+    let lan1 = 1;
+    let lan2 = 1;
+    let lan3 = 2;
+    let cho1 = document.getElementById("dog1");
+    let ho2 = document.getElementById("ho2");
+    let meo3 = document.getElementById("meo3");
+    function cham1() {
+       lan1++;
+       if (lan1 == 2){
+           cho1.src = "img/ho1.jpg"
+       }else if (lan1 == 3){
+           cho1.src = "img/meo1.jpg"
+       }else {
+           lan1 ==1
+           cho1.src = "img/cho1"
+       }
+       checkSadow()
+    }
+function cham2() {
+    lan2++;
+    if (lan2 == 2){
+        ho2.src = "img/cho2.jpg"
+    }else if (lan2 == 3){
+        ho2.src = "img/meo2.jpg"
+    }else {
+        lan1 ==1
+        ho2.src = "img/ho2.jpg"
+    }
+    checkSadow()
+}
+    function cham3() {
+        lan3++;
+        if (lan3 == 2) {
+            meo3.src = "img/cho3.jpg"
+        } else if (lan3 == 3) {
+            meo3.src = "img/meo2.jpg"
+        } else {
+            lan3 == 1
+            meo3.src = "img/ho2.jpg"
+
+            checkSadow()
+        }
+    }
+
+</script>
+</body>
+</html>
